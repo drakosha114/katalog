@@ -1,0 +1,22 @@
+{
+  "name": "stocker",
+  "description": "",
+  "main": "gulpfile.js",
+  "authors": [
+    "Andrey Skrypai"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/drakosha114/katalog",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "jquery": "^3.1.1",
+    "materialize": "^0.97.7",
+    "owl.carousel": "OwlCarousel2#^2.1.6"
+  }
+}
