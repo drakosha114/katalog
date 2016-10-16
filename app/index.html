@@ -7,20 +7,640 @@
     <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Exo+2:200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&amp;subset=cyrillic,latin-ext" rel="stylesheet">
     <link href="css/materialize.css" rel="stylesheet">
+    <link href="css/owl.carousel.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
 </head>
 <body>
-    <header class="l-header__primary">
-        <div class="l-container__full"></div>
-    </header>
-    <header class="l-header__secondary"></header>
-    <main class="l-section">
-        <div class="l-container"></div>
-    </main>
-    <section class="l-section"></section>
-    <section class="l-section"></section>
-    <footer class="l-footer__primary">
+    <div class="l-wrapper">
+        <header class="l-header__primary" style="display: none;">
+            <div class="l-container__full">asdads</div>
+        </header>
+        <header class="l-header__secondary">
+            <div class="l-container__full ">
+                <ul class="m-menu m-menu__header left">
+                    <li><a href="#">О проекте</a></li>
+                    <li><a href="#">Новости</a></li>
+                    <li><a href="#">Партнеры</a></li>
+                    <li><a href="#">Техподдержка</a></li>
+                    <li><a href="#">Контакты</a></li>
+                </ul>
+                <a href="#" class="right header--login">
+                    <span>Войти</span>
+                    <span class="material-icons">account_circle</span>
+                </a>
+            </div>
+            <div class="l-container__small">
+                <div class="header--logo center-align">
+                    <a href="index.html">
+                        <img src="images/stocker-logo-headerr.png" width="234" height="108">
+                    </a>
+                </div>
+                <div class="header--image center-align">
+                    <img src="images/stocker-header-image.png" width="981" height="227">
+                </div>
+                <div class="m-panel">
+                    <div class="m-panel--container">
+                        <form action="#" method="post" name="searchForm">
+                            <button class="m-panel--btn m-panel--btn__secondary m-panel--item">Город <i class="material-icons">keyboard_arrow_down</i></button>
+                            <button class="m-panel--btn m-panel--btn__secondary m-panel--item">Категория <i class="material-icons">keyboard_arrow_down</i></button>
+                            <button class="m-panel--btn m-panel--btn__secondary m-panel--item">Товар <i class="material-icons">keyboard_arrow_down</i></button>
+                            <input class="m-panel--input m-panel--item" type="text" name="searchText" value="Введите название товара">
+                            <button class="m-panel--btn m-panel--item" type="submit">Найти <i class="material-icons">keyboard_arrow_right</i></button>
 
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main class="l-section__main">
+            <div class="l-container">
+                <header class="m-section__title">
+                    <h2 class="m-section__title--header center-align">Самые популярные</h2>
+                    <p class="m-section__title--description center-align">Использование, копирование и изменение базы данных запрещено!</p>
+                </header>
+                <section class="m-proposals">
+                    <article class="m-proposals--item">
+                        <div class="m-proposal--content">
+                            <h3 class="m-proposal--title">Billa</h3>
+                            <ul class="m-raiting m-raiting__proposal">
+                                <li><a href="#"><i class="material-icons">star</i></a></li>
+                                <li><a href="#"><i class="material-icons">star</i></a></li>
+                                <li><a href="#"><i class="material-icons">star</i></a></li>
+                                <li><a href="#"><i class="material-icons">star_half</i></a></li>
+                                <li><a href="#"><i class="material-icons">star_border</i></a></li>
+                            </ul>
+                            <p class="m-proposal--description">Осталось 3 дня до завершения акции</p>
+                            <div class="m-proposal--button">
+                                <a href="#" class="button__rounder button__second">Смотреть</a>
+                            </div>
+
+                        </div>
+                        <div class="m-proposal--image">
+                            <img src="photos/proposal-image.jpg" width="233" height="331" alt="">
+                        </div>
+                        <div class="m-proposal--actions m-actions m-actions__proposal">
+                            <span class="m-actions--item">
+                                <i class="material-icons">star_rate</i>
+                            </span>
+                            <span class="m-actions--item">
+                                <i class="material-icons">whatshot</i>
+                            </span>
+                        </div>
+                        <div class="m-timer m-proposal--timer m-timer__proposal">
+                            <div class="m-timer--item">
+                                <div class="m-timer--item--number">222</div>
+                                <span class="m-timer--item--name">дней</span>
+                            </div>
+                            <div class="m-timer--item">
+                                <div class="m-timer--item--number">22</div>
+                                <span class="m-timer--item--name">часов</span>
+                            </div>
+                            <div class="m-timer--item">
+                                <div class="m-timer--item--number">20</div>
+                                <span class="m-timer--item--name">минут</span>
+                            </div>
+                            <div class="m-timer--item">
+                                <div class="m-timer--item--number">23</div>
+                                <span class="m-timer--item--name">секунд</span>
+                            </div>
+                        </div>
+                        <div class="m-proposal--likes">
+                            <ul class="m-likes m-likes__proposal">
+                                <li><i class="material-icons">remove_red_eye</i> <span>9</span></li>
+                                <li><i class="material-icons">favorite</i> <span>5</span></li>
+                            </ul>
+                        </div>
+                        <div class="m-proposal--background m-proposal--background__orange"></div>
+                    </article>
+                    <article class="m-proposals--item">
+                        <div class="m-proposal--content">
+                            <h3 class="m-proposal--title">Billa</h3>
+                            <ul class="m-raiting m-raiting__proposal">
+                                <li><a href="#"><i class="material-icons">star</i></a></li>
+                                <li><a href="#"><i class="material-icons">star</i></a></li>
+                                <li><a href="#"><i class="material-icons">star</i></a></li>
+                                <li><a href="#"><i class="material-icons">star_half</i></a></li>
+                                <li><a href="#"><i class="material-icons">star_border</i></a></li>
+                            </ul>
+                            <p class="m-proposal--description">Осталось 3 дня до завершения акции</p>
+                            <div class="m-proposal--button">
+                                <a href="#" class="button__rounder button__second">Смотреть</a>
+                            </div>
+
+                        </div>
+                        <div class="m-proposal--image">
+                            <img src="photos/proposal-image.jpg" width="233" height="331" alt="">
+                        </div>
+                        <div class="m-proposal--actions m-actions m-actions__proposal">
+                            <span class="m-actions--item">
+                                <i class="material-icons">star_rate</i>
+                            </span>
+                            <span class="m-actions--item">
+                                <i class="material-icons">whatshot</i>
+                            </span>
+                        </div>
+                        <div class="m-timer m-proposal--timer m-timer__proposal">
+                            <div class="m-timer--item">
+                                <div class="m-timer--item--number">222</div>
+                                <span class="m-timer--item--name">дней</span>
+                            </div>
+                            <div class="m-timer--item">
+                                <div class="m-timer--item--number">22</div>
+                                <span class="m-timer--item--name">часов</span>
+                            </div>
+                            <div class="m-timer--item">
+                                <div class="m-timer--item--number">20</div>
+                                <span class="m-timer--item--name">минут</span>
+                            </div>
+                            <div class="m-timer--item">
+                                <div class="m-timer--item--number">23</div>
+                                <span class="m-timer--item--name">секунд</span>
+                            </div>
+                        </div>
+                        <div class="m-proposal--likes">
+                            <ul class="m-likes m-likes__proposal">
+                                <li><i class="material-icons">remove_red_eye</i> <span>9</span></li>
+                                <li><i class="material-icons">favorite</i> <span>5</span></li>
+                            </ul>
+                        </div>
+                        <div class="m-proposal--background m-proposal--background__yellow"></div>
+                    </article>
+                    <article class="m-proposals--item">
+                        <div class="m-proposal--content">
+                            <h3 class="m-proposal--title">Billa</h3>
+                            <ul class="m-raiting m-raiting__proposal">
+                                <li><a href="#"><i class="material-icons">star</i></a></li>
+                                <li><a href="#"><i class="material-icons">star</i></a></li>
+                                <li><a href="#"><i class="material-icons">star</i></a></li>
+                                <li><a href="#"><i class="material-icons">star_half</i></a></li>
+                                <li><a href="#"><i class="material-icons">star_border</i></a></li>
+                            </ul>
+                            <p class="m-proposal--description">Осталось 3 дня до завершения акции</p>
+                            <div class="m-proposal--button">
+                                <a href="#" class="button__rounder button__second">Смотреть</a>
+                            </div>
+
+                        </div>
+                        <div class="m-proposal--image">
+                            <img src="photos/proposal-image.jpg" width="233" height="331" alt="">
+                        </div>
+                        <div class="m-proposal--actions m-actions m-actions__proposal">
+                            <span class="m-actions--item">
+                                <i class="material-icons">star_rate</i>
+                            </span>
+                            <span class="m-actions--item">
+                                <i class="material-icons">whatshot</i>
+                            </span>
+                        </div>
+                        <div class="m-timer m-proposal--timer m-timer__proposal">
+                            <div class="m-timer--item">
+                                <div class="m-timer--item--number">222</div>
+                                <span class="m-timer--item--name">дней</span>
+                            </div>
+                            <div class="m-timer--item">
+                                <div class="m-timer--item--number">22</div>
+                                <span class="m-timer--item--name">часов</span>
+                            </div>
+                            <div class="m-timer--item">
+                                <div class="m-timer--item--number">20</div>
+                                <span class="m-timer--item--name">минут</span>
+                            </div>
+                            <div class="m-timer--item">
+                                <div class="m-timer--item--number">23</div>
+                                <span class="m-timer--item--name">секунд</span>
+                            </div>
+                        </div>
+                        <div class="m-proposal--likes">
+                            <ul class="m-likes m-likes__proposal">
+                                <li><i class="material-icons">remove_red_eye</i> <span>9</span></li>
+                                <li><i class="material-icons">favorite</i> <span>5</span></li>
+                            </ul>
+                        </div>
+                        <div class="m-proposal--background m-proposal--background__green"></div>
+                    </article>
+                    <article class="m-proposals--item">
+                        <div class="m-proposal--content">
+                            <h3 class="m-proposal--title">Billa</h3>
+                            <ul class="m-raiting m-raiting__proposal">
+                                <li><a href="#"><i class="material-icons">star</i></a></li>
+                                <li><a href="#"><i class="material-icons">star</i></a></li>
+                                <li><a href="#"><i class="material-icons">star</i></a></li>
+                                <li><a href="#"><i class="material-icons">star_half</i></a></li>
+                                <li><a href="#"><i class="material-icons">star_border</i></a></li>
+                            </ul>
+                            <p class="m-proposal--description">Осталось 3 дня до завершения акции</p>
+                            <div class="m-proposal--button">
+                                <a href="#" class="button__rounder button__second">Смотреть</a>
+                            </div>
+
+                        </div>
+                        <div class="m-proposal--image">
+                            <img src="photos/proposal-image.jpg" width="233" height="331" alt="">
+                        </div>
+                        <div class="m-proposal--actions m-actions m-actions__proposal">
+                            <span class="m-actions--item">
+                                <i class="material-icons">star_rate</i>
+                            </span>
+                            <span class="m-actions--item">
+                                <i class="material-icons">whatshot</i>
+                            </span>
+                        </div>
+                        <div class="m-timer m-proposal--timer m-timer__proposal">
+                            <div class="m-timer--item">
+                                <div class="m-timer--item--number">222</div>
+                                <span class="m-timer--item--name">дней</span>
+                            </div>
+                            <div class="m-timer--item">
+                                <div class="m-timer--item--number">22</div>
+                                <span class="m-timer--item--name">часов</span>
+                            </div>
+                            <div class="m-timer--item">
+                                <div class="m-timer--item--number">20</div>
+                                <span class="m-timer--item--name">минут</span>
+                            </div>
+                            <div class="m-timer--item">
+                                <div class="m-timer--item--number">23</div>
+                                <span class="m-timer--item--name">секунд</span>
+                            </div>
+                        </div>
+                        <div class="m-proposal--likes">
+                            <ul class="m-likes m-likes__proposal">
+                                <li><i class="material-icons">remove_red_eye</i> <span>9</span></li>
+                                <li><i class="material-icons">favorite</i> <span>5</span></li>
+                            </ul>
+                        </div>
+                        <div class="m-proposal--background m-proposal--background__yellow"></div>
+                    </article>
+                    <article class="m-proposals--item">
+                        <div class="m-proposal--content">
+                            <h3 class="m-proposal--title">Billa</h3>
+                            <ul class="m-raiting m-raiting__proposal">
+                                <li><a href="#"><i class="material-icons">star</i></a></li>
+                                <li><a href="#"><i class="material-icons">star</i></a></li>
+                                <li><a href="#"><i class="material-icons">star</i></a></li>
+                                <li><a href="#"><i class="material-icons">star_half</i></a></li>
+                                <li><a href="#"><i class="material-icons">star_border</i></a></li>
+                            </ul>
+                            <p class="m-proposal--description">Осталось 3 дня до завершения акции</p>
+                            <div class="m-proposal--button">
+                                <a href="#" class="button__rounder button__second">Смотреть</a>
+                            </div>
+
+                        </div>
+                        <div class="m-proposal--image">
+                            <img src="photos/proposal-image.jpg" width="233" height="331" alt="">
+                        </div>
+                        <div class="m-proposal--actions m-actions m-actions__proposal">
+                            <span class="m-actions--item">
+                                <i class="material-icons">star_rate</i>
+                            </span>
+                            <span class="m-actions--item">
+                                <i class="material-icons">whatshot</i>
+                            </span>
+                        </div>
+                        <div class="m-timer m-proposal--timer m-timer__proposal">
+                            <div class="m-timer--item">
+                                <div class="m-timer--item--number">222</div>
+                                <span class="m-timer--item--name">дней</span>
+                            </div>
+                            <div class="m-timer--item">
+                                <div class="m-timer--item--number">22</div>
+                                <span class="m-timer--item--name">часов</span>
+                            </div>
+                            <div class="m-timer--item">
+                                <div class="m-timer--item--number">20</div>
+                                <span class="m-timer--item--name">минут</span>
+                            </div>
+                            <div class="m-timer--item">
+                                <div class="m-timer--item--number">23</div>
+                                <span class="m-timer--item--name">секунд</span>
+                            </div>
+                        </div>
+                        <div class="m-proposal--likes">
+                            <ul class="m-likes m-likes__proposal">
+                                <li><i class="material-icons">remove_red_eye</i> <span>9</span></li>
+                                <li><i class="material-icons">favorite</i> <span>5</span></li>
+                            </ul>
+                        </div>
+                        <div class="m-proposal--background m-proposal--background__yellow"></div>
+                    </article>
+                    <article class="m-proposals--item">
+                        <div class="m-proposal--content">
+                            <h3 class="m-proposal--title">Billa</h3>
+                            <ul class="m-raiting m-raiting__proposal">
+                                <li><a href="#"><i class="material-icons">star</i></a></li>
+                                <li><a href="#"><i class="material-icons">star</i></a></li>
+                                <li><a href="#"><i class="material-icons">star</i></a></li>
+                                <li><a href="#"><i class="material-icons">star_half</i></a></li>
+                                <li><a href="#"><i class="material-icons">star_border</i></a></li>
+                            </ul>
+                            <p class="m-proposal--description">Осталось 3 дня до завершения акции</p>
+                            <div class="m-proposal--button">
+                                <a href="#" class="button__rounder button__second">Смотреть</a>
+                            </div>
+
+                        </div>
+                        <div class="m-proposal--image">
+                            <img src="photos/proposal-image.jpg" width="233" height="331" alt="">
+                        </div>
+                        <div class="m-proposal--actions m-actions m-actions__proposal">
+                            <span class="m-actions--item">
+                                <i class="material-icons">star_rate</i>
+                            </span>
+                            <span class="m-actions--item">
+                                <i class="material-icons">whatshot</i>
+                            </span>
+                        </div>
+                        <div class="m-timer m-proposal--timer m-timer__proposal">
+                            <div class="m-timer--item">
+                                <div class="m-timer--item--number">222</div>
+                                <span class="m-timer--item--name">дней</span>
+                            </div>
+                            <div class="m-timer--item">
+                                <div class="m-timer--item--number">22</div>
+                                <span class="m-timer--item--name">часов</span>
+                            </div>
+                            <div class="m-timer--item">
+                                <div class="m-timer--item--number">20</div>
+                                <span class="m-timer--item--name">минут</span>
+                            </div>
+                            <div class="m-timer--item">
+                                <div class="m-timer--item--number">23</div>
+                                <span class="m-timer--item--name">секунд</span>
+                            </div>
+                        </div>
+                        <div class="m-proposal--likes">
+                            <ul class="m-likes m-likes__proposal">
+                                <li><i class="material-icons">remove_red_eye</i> <span>9</span></li>
+                                <li><i class="material-icons">favorite</i> <span>5</span></li>
+                            </ul>
+                        </div>
+                        <div class="m-proposal--background m-proposal--background__green"></div>
+                    </article>
+                    <article class="m-proposals--item">
+                        <div class="m-proposal--content">
+                            <h3 class="m-proposal--title">Billa</h3>
+                            <ul class="m-raiting m-raiting__proposal">
+                                <li><a href="#"><i class="material-icons">star</i></a></li>
+                                <li><a href="#"><i class="material-icons">star</i></a></li>
+                                <li><a href="#"><i class="material-icons">star</i></a></li>
+                                <li><a href="#"><i class="material-icons">star_half</i></a></li>
+                                <li><a href="#"><i class="material-icons">star_border</i></a></li>
+                            </ul>
+                            <p class="m-proposal--description">Осталось 3 дня до завершения акции</p>
+                            <div class="m-proposal--button">
+                                <a href="#" class="button__rounder button__second">Смотреть</a>
+                            </div>
+
+                        </div>
+                        <div class="m-proposal--image">
+                            <img src="photos/proposal-image.jpg" width="233" height="331" alt="">
+                        </div>
+                        <div class="m-proposal--actions m-actions m-actions__proposal">
+                            <span class="m-actions--item">
+                                <i class="material-icons">star_rate</i>
+                            </span>
+                            <span class="m-actions--item">
+                                <i class="material-icons">whatshot</i>
+                            </span>
+                        </div>
+                        <div class="m-timer m-proposal--timer m-timer__proposal">
+                            <div class="m-timer--item">
+                                <div class="m-timer--item--number">222</div>
+                                <span class="m-timer--item--name">дней</span>
+                            </div>
+                            <div class="m-timer--item">
+                                <div class="m-timer--item--number">22</div>
+                                <span class="m-timer--item--name">часов</span>
+                            </div>
+                            <div class="m-timer--item">
+                                <div class="m-timer--item--number">20</div>
+                                <span class="m-timer--item--name">минут</span>
+                            </div>
+                            <div class="m-timer--item">
+                                <div class="m-timer--item--number">23</div>
+                                <span class="m-timer--item--name">секунд</span>
+                            </div>
+                        </div>
+                        <div class="m-proposal--likes">
+                            <ul class="m-likes m-likes__proposal">
+                                <li><i class="material-icons">remove_red_eye</i> <span>9</span></li>
+                                <li><i class="material-icons">favorite</i> <span>5</span></li>
+                            </ul>
+                        </div>
+                        <div class="m-proposal--background m-proposal--background__yellow"></div>
+                    </article>
+                    <article class="m-proposals--item">
+                        <div class="m-proposal--content">
+                            <h3 class="m-proposal--title">Billa</h3>
+                            <ul class="m-raiting m-raiting__proposal">
+                                <li><a href="#"><i class="material-icons">star</i></a></li>
+                                <li><a href="#"><i class="material-icons">star</i></a></li>
+                                <li><a href="#"><i class="material-icons">star</i></a></li>
+                                <li><a href="#"><i class="material-icons">star_half</i></a></li>
+                                <li><a href="#"><i class="material-icons">star_border</i></a></li>
+                            </ul>
+                            <p class="m-proposal--description">Осталось 3 дня до завершения акции</p>
+                            <div class="m-proposal--button">
+                                <a href="#" class="button__rounder button__second">Смотреть</a>
+                            </div>
+
+                        </div>
+                        <div class="m-proposal--image">
+                            <img src="photos/proposal-image.jpg" width="233" height="331" alt="">
+                        </div>
+                        <div class="m-proposal--actions m-actions m-actions__proposal">
+                            <span class="m-actions--item">
+                                <i class="material-icons">star_rate</i>
+                            </span>
+                            <span class="m-actions--item">
+                                <i class="material-icons">whatshot</i>
+                            </span>
+                        </div>
+                        <div class="m-timer m-proposal--timer m-timer__proposal">
+                            <div class="m-timer--item">
+                                <div class="m-timer--item--number">222</div>
+                                <span class="m-timer--item--name">дней</span>
+                            </div>
+                            <div class="m-timer--item">
+                                <div class="m-timer--item--number">22</div>
+                                <span class="m-timer--item--name">часов</span>
+                            </div>
+                            <div class="m-timer--item">
+                                <div class="m-timer--item--number">20</div>
+                                <span class="m-timer--item--name">минут</span>
+                            </div>
+                            <div class="m-timer--item">
+                                <div class="m-timer--item--number">23</div>
+                                <span class="m-timer--item--name">секунд</span>
+                            </div>
+                        </div>
+                        <div class="m-proposal--likes">
+                            <ul class="m-likes m-likes__proposal">
+                                <li><i class="material-icons">remove_red_eye</i> <span>9</span></li>
+                                <li><i class="material-icons">favorite</i> <span>5</span></li>
+                            </ul>
+                        </div>
+                        <div class="m-proposal--background m-proposal--background__orange"></div>
+                    </article>
+                    <article class="m-proposals--item">
+                        <div class="m-proposal--content">
+                            <h3 class="m-proposal--title">Billa</h3>
+                            <ul class="m-raiting m-raiting__proposal">
+                                <li><a href="#"><i class="material-icons">star</i></a></li>
+                                <li><a href="#"><i class="material-icons">star</i></a></li>
+                                <li><a href="#"><i class="material-icons">star</i></a></li>
+                                <li><a href="#"><i class="material-icons">star_half</i></a></li>
+                                <li><a href="#"><i class="material-icons">star_border</i></a></li>
+                            </ul>
+                            <p class="m-proposal--description">Осталось 3 дня до завершения акции</p>
+                            <div class="m-proposal--button">
+                                <a href="#" class="button__rounder button__second">Смотреть</a>
+                            </div>
+
+                        </div>
+                        <div class="m-proposal--image">
+                            <img src="photos/proposal-image.jpg" width="233" height="331" alt="">
+                        </div>
+                        <div class="m-proposal--actions m-actions m-actions__proposal">
+                            <span class="m-actions--item">
+                                <i class="material-icons">star_rate</i>
+                            </span>
+                            <span class="m-actions--item">
+                                <i class="material-icons">whatshot</i>
+                            </span>
+                        </div>
+                        <div class="m-timer m-proposal--timer m-timer__proposal">
+                            <div class="m-timer--item">
+                                <div class="m-timer--item--number">222</div>
+                                <span class="m-timer--item--name">дней</span>
+                            </div>
+                            <div class="m-timer--item">
+                                <div class="m-timer--item--number">22</div>
+                                <span class="m-timer--item--name">часов</span>
+                            </div>
+                            <div class="m-timer--item">
+                                <div class="m-timer--item--number">20</div>
+                                <span class="m-timer--item--name">минут</span>
+                            </div>
+                            <div class="m-timer--item">
+                                <div class="m-timer--item--number">23</div>
+                                <span class="m-timer--item--name">секунд</span>
+                            </div>
+                        </div>
+                        <div class="m-proposal--likes">
+                            <ul class="m-likes m-likes__proposal">
+                                <li><i class="material-icons">remove_red_eye</i> <span>9</span></li>
+                                <li><i class="material-icons">favorite</i> <span>5</span></li>
+                            </ul>
+                        </div>
+                        <div class="m-proposal--background m-proposal--background__yellow"></div>
+                    </article>
+                </section>
+            </div>
+        </main>
+        <aside class="l-section__secondary">
+            <div class="l-container">
+                <div class="m-section__title">
+                    <h2 class="m-section__title--header left">Новости</h2>
+                    <a href="#" class="m-section__title--link right">Смотреть все новости</a>
+                </div>
+            </div>
+            <div class="l-container__full">
+                <div class="m-slider m-slider__big">
+                    <div class="m-slider--container  js-owl-big owl-carousel">
+                        <div class="m-slider--item">
+                            sadasd
+                        </div>
+                        <div class="m-slider--item">
+                            sadads
+                        </div>
+                        <div class="m-slider--item">
+                            asdasd
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </aside>
+        <aside class="l-section__secondary">
+            <div class="l-container">
+                <div class="m-section__title">
+                    <h2 class="m-section__title--header center-align">Более 80 торговых сетей</h2>
+                </div>
+            </div>
+            <div class="l-container__full">
+                <div class="m-slider m-slider__small">
+                    <div class="m-slider--container js-owl-small owl-carousel">
+                        <div class="m-slider--item item"><img src="photos/novus.png" width="300" height="100"></div>
+                        <div class="m-slider--item item"><img src="photos/novus.png" width="300" height="100"></div>
+                        <div class="m-slider--item item"><img src="photos/novus.png" width="300" height="100"></div>
+                        <div class="m-slider--item item"><img src="photos/novus.png" width="300" height="100"></div>
+                        <div class="m-slider--item item"><img src="photos/novus.png" width="300" height="100"></div>
+                        <div class="m-slider--item item"><img src="photos/novus.png" width="300" height="100"></div>
+                        <div class="m-slider--item item"><img src="photos/novus.png" width="300" height="100"></div>
+                        <div class="m-slider--item item"><img src="photos/novus.png" width="300" height="100"></div>
+                        <div class="m-slider--item item"><img src="photos/novus.png" width="300" height="100"></div>
+                        <div class="m-slider--item item"><img src="photos/novus.png" width="300" height="100"></div>
+                        <div class="m-slider--item item"><img src="photos/novus.png" width="300" height="100"></div>
+                        <div class="m-slider--item item"><img src="photos/novus.png" width="300" height="100"></div>
+                        <div class="m-slider--item item"><img src="photos/novus.png" width="300" height="100"></div>
+                        <div class="m-slider--item item"><img src="photos/novus.png" width="300" height="100"></div>
+                        <div class="m-slider--item item"><img src="photos/novus.png" width="300" height="100"></div>
+                        <div class="m-slider--item item"><img src="photos/novus.png" width="300" height="100"></div>
+                    </div>
+                </div>
+            </div>
+        </aside>
+    </div>
+    <footer class="l-footer__primary">
+        <div class="l-section l-footer--contact">
+            <div class="l-container__small">
+                <div class="row">
+                    <div class="col l2"></div>
+                    <div class="col l4">
+                        <button class="button__rounder button__first">Отправить нам сообщение</button>
+                    </div>
+                    <div class="col l4">
+                        <div class="footer__text--primary">Будем рады ответить на любые Ваши вопросы, касательно нашего сервиса</div>
+                    </div>
+                    <div class="col l2"></div>
+                </div>
+
+            </div>
+        </div>
+        <div class="l-section l-footer--main">
+            <div class="l-container__small">
+                <div class="row">
+                    <div class="col l8">
+                        <ul class="m-menu m-menu__footer-main">
+                            <li><a href="#">О нас</a></li>
+                            <li><a href="#">Партнерам</a></li>
+                            <li><a href="#">Новости</a></li>
+                            <li><a href="#">Техподдержка</a></li>
+                            <li><a href="#">Контакты</a></li>
+                        </ul>
+                        <div class="footer__text--secondary">Дизайн и структура страниц настоящего Сайта (внешний вид и функционал) являются эксклюзивной собственностью компании STOCKER и не подлежат использованию, копированию, распространению или воспроизведению. Использование, копирование и изменение базы данных запрещено. </div>
+                        <div class="footer__text--secondary">Продвижение в поисковых системах Интернета может значительно улучшить положение предпринимателя, поможет сделать его бизнес более доходным, конкурентоспособным. Поисковое продвижение, прежде всего, заключается в оптимизации каждой страницы, которую владелец сайта хочет продвинуть по конкретному запросу. Говоря об оптимизации, мы имеем в виду оптимизацию программного кода, оптимизацию ссылочной структуры, оптимизацию контента, что особенно важно! Чтобы успешно продвигаться в поисковых системах, нужно заниматься еще и работой с внешней средой в интернете.</div>
+                    </div>
+                    <div class="col l4">
+                        <ul class="m-menu m-menu__footer--social">
+                            <li><a href="#" class="material-icons" target="_blank">account_circle</a></li>
+                            <li><a href="#" class="material-icons" target="_blank">account_circle</a></li>
+                            <li><a href="#" class="material-icons" target="_blank">account_circle</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="l-section l-footer--copyright">
+            <div class="l-container__small">
+                <div class="right footer__copyright--autor"><span>Дело рук:</span> <a href="#" target="_blank"><img src="images/izum-logo.png" width="74" height="14"></a></div>
+                <div class="left footer__copyright--logo"><a href="index.html"><img src="images/stocker-logo-footer.png" width="115" height="37"></a></div>
+                <div class="left footer__copyright--text">© 2016  Все права защищены.</div>
+                <div class="left footer__copyright--button"><button class="button__rounder button__first--light">Сообщить об ошибке</button></div>
+            </div>
+        </div>
     </footer>
     <script src="js/jquery.js"></script>
     <script src="js/materialize.js"></script>

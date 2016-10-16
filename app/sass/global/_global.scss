@@ -1,0 +1,14 @@
+html {
+  font-size: $root-element-font-size;
+}
+@media #{$medium-and-down} {
+  html {
+    font-size: $root-element-font-size-tablet;
+  }
+}
+body {
+  font-size: $body-font-size;
+  font-family: $base-font-family;
+  background: $body-background;
+  line-height: $base-line-height;
+}

@@ -1,0 +1,53 @@
+.m-menu {
+  @extend %clearfix;
+  > li {
+    float: left;
+    > a {
+      display: block;
+    }
+  }
+}
+.m-menu__footer-main {
+  li:not(:first-child) {
+    margin-left: 2rem;
+  }
+  a {
+    color: $footer-color;
+    font-size: 1.8rem;
+    line-height: 120%;
+  }
+}
+.m-menu__footer--social {
+  li:not(:first-child) {
+    margin-left: 2rem;
+  }
+  float: right;
+  a {
+    color: $footer-color;
+    font-size: 3.6rem;
+
+  }
+}
+@media #{$medium-and-down} {
+  .m-menu__footer-main,
+  .m-menu__footer--social {
+    float: none;
+    text-align: center;
+
+    > li {
+      float: none;
+      display: inline-block;
+    }
+  }
+}
+.m-menu__header {
+  margin: 2.5rem 0 2.5rem 3rem;
+  a {
+    color: #373b3c;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+  li:not(:first-child) {
+    margin-left: 4.5rem;
+  }
+}

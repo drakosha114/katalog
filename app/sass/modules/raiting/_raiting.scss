@@ -1,0 +1,27 @@
+.m-raiting {
+  @extend %clearfix;
+
+  margin: 0;
+
+  > li {
+    float: left;
+    &:not(:first-child) {
+      margin-left: -0.5rem;
+    }
+  }
+  a {
+    color: $bace-color;
+    font-size: 3rem;
+    display: block;
+    line-height: 3rem;
+  }
+  .material-icons {
+    font-size: inherit;
+    line-height: 100%;
+  }
+  &.m-raiting__proposal {
+    margin: 1rem 0 1rem -0.6rem;
+
+  }
+}
+

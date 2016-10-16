@@ -1,0 +1,23 @@
+.m-actions {
+  @extend %clearfix;
+}
+.m-actions--item {
+  float: left;
+  background: $color-red;
+  color: $color-white;
+  width: 4.5rem;
+  height: 4.5rem;
+  border-radius: 2.25rem;
+  text-align: center;
+
+  .material-icons {
+    line-height: 4.5rem;
+    font-size: 2.5rem;
+    width: 2.5rem;
+    display: inline-block;
+  }
+
+  &:not(:first-child) {
+    margin-left: 1rem;
+  }
+}

@@ -1,0 +1,13 @@
+.m-section__title {
+  &.m-section__title--pageHeader {
+    margin-bottom: 4rem;
+    margin-top: 3.9rem;
+  }
+}
+.m-section__title--header {
+  font-size: 5rem;
+  line-height: 110%;
+  text-transform: uppercase;
+  margin: 0;
+  letter-spacing: 1.5px;
+}

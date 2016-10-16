@@ -1,0 +1,23 @@
+.m-timer {
+  @extend %clearfix;
+}
+.m-timer--item {
+  float: left;
+  &:not(:first-child) {
+    margin-left: 0.1rem;
+  }
+}
+.m-timer--item--number {
+  color: $color-white;
+  background: $color-dark-gray;
+  min-width: 5.2rem;
+  font-size: 2rem;
+  line-height: 5.2rem;
+  border-radius: 3px;
+  text-align: center;
+}
+.m-timer--item--name {
+  font-size: 1.2rem;
+  text-align: center;
+  display: block;
+}

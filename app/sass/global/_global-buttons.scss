@@ -1,0 +1,13 @@
+.button__rounder {
+  @extend %button;
+}
+.button__first {
+  @extend %button-first
+}
+.button__first--light {
+  @extend %button-lighten;
+  @extend %button-first-lighten;
+}
+.button__second {
+  @extend %button-second;
+}

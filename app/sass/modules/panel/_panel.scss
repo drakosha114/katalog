@@ -1,0 +1,82 @@
+.m-panel {
+  text-align: center;
+  margin-bottom: -2.5rem;
+  &.m-panel__mainNav {
+    margin-bottom: 0;
+  }
+}
+.m-panel--container {
+  //width: 1000px;
+  //margin: 0 auto;
+  //display: inline-block;
+  //height: $panel-height;
+  @include flexbox;
+  @include flex-direction(row);
+  @include justify-content(center);
+  > form {
+    @extend %clearfix;
+    @include flexbox;
+    @include flex-direction(row);
+    border-radius: 5px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+
+    @at-root .m-panel__mainNav & {
+      width: 100%;
+    }
+  }
+}
+.m-panel--item {
+  line-height: $panel-height;
+
+  @at-root .m-panel:not(.m-panel__mainNav) &{
+    &:first-child {
+      border-radius: 5px 0 0 5px;
+    }
+
+    &:last-child {
+      border-radius: 0 5px 5px 0;
+    }
+  }
+}
+.m-panel--btn {
+  @extend %btn;
+  height: 5rem;
+  .material-icons {
+    @extend %btn-icon;
+  }
+  @include flex(1 1 1);
+}
+.m-panel--item + .m-panel--item {
+  border-left: 1px solid rgba($color-white, 0.5);
+}
+.m-panel--btn__secondary {
+  @extend %btn-secondary;
+}
+.m-panel--btn__third {
+  @extend %btn-third;
+}
+.m-panel--btn__fourth {
+  @extend %btn-fourth;
+}
+input[type="text"].m-panel--input {
+  margin: 0;
+  line-height: $panel-height;
+//  height: inherit;
+  border: none;
+  height: 5rem;
+  width: auto;
+  @include flex(11 11 11);
+  @include flex-grow(11);
+  &:focus {
+    border: none;
+  }
+  font-size: 1.8rem;
+  color: $color-blue;
+  padding: 0 2rem 0 6rem;
+  box-sizing: border-box;
+  background: url("#{$images-path}/search.png") 20px 50% no-repeat $color-white;
+
+  @at-root .m-panel:not(.m-panel__mainNav) &{
+    width: 458px;
+  }
+}

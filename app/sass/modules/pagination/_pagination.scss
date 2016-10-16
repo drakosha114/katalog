@@ -1,0 +1,23 @@
+.m-pagination {
+
+  margin-bottom: 3.9rem;
+
+  ul {
+    margin: 0;
+    @extend %clearfix;
+  }
+  li {
+    float: left;
+    a,
+    span {
+      color: $color-light-blue;
+      font-size: 1.8rem;
+      line-height: 120%;
+    }
+
+    &:not(:first-child) {
+      margin-left: 1rem;
+    }
+  }
+
+}

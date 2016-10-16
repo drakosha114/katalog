@@ -1,0 +1,26 @@
+.header--image {
+  margin-top: 4px;
+  max-width: 981px;
+  width: 100%;
+  @extend %margin-auto;
+  img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+}
+.header--logo {
+  position: relative;
+  top: 19px;
+  left: 8px;
+}
+.header--login {
+  color: #373b3c;
+  margin: 2.1rem 1rem 0 0;
+  .material-icons {
+    font-size: 3.4rem;
+  }
+  span {
+    vertical-align: middle;
+  }
+}

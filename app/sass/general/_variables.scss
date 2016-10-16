@@ -1,5 +1,40 @@
-$images-path: '../images/';
+// path
+$images-path: '../images';
+
 
 $base-font-family: 'Exo 2', sans-serif;
+$root-element-font-size: 62.5%;
+$root-element-font-size-tablet: 50%;
+$body-font-size: 1.8rem;
+$body-tablet-font-size: 1.4rem;
+$module-font-size: 2rem;
+$base-line-height: 1.4em;
+$max-width: 1740px;
+$max-width-small: 1240px;
+$screen-xl-large: 1600px;
 
 $body-background: $color-light-brown;
+$footer-background-color: $color-blue;
+$section-color-white: $color-light-gray;
+$section-color-black: $color-black;
+$nav-panel-background: $color-white;
+$footer-color: $color-white;
+
+$button-primary-color: $color-red;
+$button-secondary-color: $color-light-blue;
+$button-third-color: $color-dark-gray;
+
+$button-rounder-height: 5rem;
+$button-rounder-height-small: 4rem;
+$button-rounder-border-radius: 2.5rem;
+$button-rounder-border-radius-small: 2rem;
+$button-rounder-padding: 2.5rem;
+$button-rounder-padding-small: 2rem;
+$button-rounder-border-color-first: $color-light-blue;
+
+$section-padding-top: 3rem;
+$section-padding-bottom: 3rem;
+$container-padding-left: 2rem;
+$container-padding-right: 2rem;
+
+$panel-height: 5rem;

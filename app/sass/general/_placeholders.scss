@@ -1,0 +1,93 @@
+%clearfix {
+  &:before,
+  &:after {
+    content: '';
+    display: table;
+    line-height: 0;
+  }
+  &:after {
+    clear: both;
+  }
+}
+%margin-auto {
+  margin: 0 auto;
+}
+%section {
+  padding-top: $section-padding-top;
+  padding-bottom: $section-padding-bottom;
+}
+%button {
+  font-size: 1.4rem;
+  text-decoration: none;
+  color: $color-white;
+  background-color: transparent;
+  text-align: center;
+  letter-spacing: .5px;
+  line-height: $button-rounder-height;
+  outline: 0;
+  padding: 0 $button-rounder-padding;
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-border-radius: $button-rounder-border-radius;
+  -moz-border-radius: $button-rounder-border-radius;
+  border-radius: $button-rounder-border-radius;
+}
+%button-lighten {
+  line-height: $button-rounder-height-small;
+  padding: 0 $button-rounder-padding-small;
+  -webkit-border-radius: $button-rounder-border-radius-small;
+  -moz-border-radius: $button-rounder-border-radius-small;
+  border-radius: $button-rounder-border-radius-small;
+}
+%button-first {
+  border: 1px solid $button-rounder-border-color-first;
+  text-transform: uppercase;
+}
+%button-first-lighten {
+  border: 1px solid rgba($button-rounder-border-color-first, 0.4);
+}
+%button-second {
+  border: 1px solid $color-light-blue;
+  background: $color-light-blue;
+  text-transform: uppercase;
+  &:hover {
+    box-shadow: 0 0 20px rgba($color-light-blue, 0.6)
+  }
+}
+%button-second--lighten {
+
+}
+%btn {
+  text-decoration: none;
+  color: #fff;
+  background-color: $button-primary-color;
+  text-align: center;
+  letter-spacing: .5px;
+  transition: .2s ease-out;
+  cursor: pointer;
+  border: none;
+  border-radius: 0;
+  display: inline-block;
+  height: inherit;
+  line-height: 5rem;
+  outline: 0;
+  padding: 0 2.5rem;
+  vertical-align: middle;
+  -webkit-tap-highlight-color: transparent;
+  font-size: 1.8rem;
+}
+%btn-icon {
+  font-size: 1.8rem;
+  line-height: 1em;
+  vertical-align: middle;
+}
+%btn-secondary {
+  background-color: $button-secondary-color;
+}
+%btn-third {
+  background: $button-third-color;
+}
+%btn-fourth {
+  color: $bace-color;
+  background: $color-white;
+}

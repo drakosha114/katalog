@@ -1,0 +1,139 @@
+.m-proposals {
+  @extend %clearfix;
+  margin: 7.5rem 0 3.2rem;
+}
+.m-proposals--item {
+  width: 30%;
+  float: left;
+
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  position: relative;
+  z-index: 1;
+  height: 290px;
+  padding: 2rem;
+  box-sizing: border-box;
+
+  &:nth-child(3n+2) {
+    margin-left: 5%;
+  }
+  &:nth-child(3n+3) {
+    margin-left: 5%;
+  }
+
+  @include breakpoints($screen-xl-large) {
+    width: 45%;
+    &:nth-child(3n+2) {
+      margin-left: 0;
+    }
+    &:nth-child(3n+3) {
+      margin-left: 0;
+    }
+    &:nth-child(2n) {
+      margin-left: 10%;
+    }
+
+  }
+  @include breakpoints($large-screen) {
+    width: 48%;
+    &:nth-child(2n) {
+      margin-left: 4%;
+    }
+  }
+  @include breakpoints($small-screen) {
+    width: 100%;
+    margin-left: 0;
+  }
+}
+
+.m-proposal--background {
+  border-radius: 2px;
+  background: $color-white;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  &.m-proposal--background__orange {
+    border-bottom: 3px solid $color-orange;
+  }
+  &.m-proposal--background__yellow {
+    border-bottom: 3px solid $color-yellow;
+  }
+  &.m-proposal--background__green {
+    border-bottom: 3px solid $color-green;
+  }
+
+  //transition: all ease 0.1s;
+}
+.m-proposal--image {
+  position: absolute;
+  z-index: 1;
+  left: 2.4rem;
+  top: -2rem;
+  width: 231px;
+  img {
+    max-width: 100%;
+  }
+}
+.m-proposal--title {
+  text-transform: uppercase;
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin: 2.2rem 0 0.5rem;
+}
+.m-proposal--content {
+  position: relative;
+  z-index: 1;
+  margin-left: 261px;
+  height: 100%;
+}
+.m-proposal--description {
+  font-size: 1.4rem;
+  line-height: 120%;
+  margin: 2rem 0;
+}
+.m-proposal--actions {
+  position: absolute;
+  margin-left: 260px;
+  top: -2.1rem;
+  z-index: 2;
+  @extend %clearfix;
+}
+.m-proposal--timer,
+.m-proposal--likes {
+  position: absolute;
+  z-index: 2;
+}
+.m-proposal--timer {
+  bottom: 1.8rem;
+  margin-left: 261px;
+}
+.m-proposal--likes {
+  bottom: -3.2rem;
+  margin-left: 270px;
+}
+.m-proposal--button,
+.m-proposal--likes {
+  display: none;
+}
+.m-proposals--item {
+  &:hover {
+    z-index: 3;
+    .m-proposal--background {
+      top: -6.4rem;
+      left: -2.2rem;
+      bottom: -6rem;
+      right: -2.4rem;
+      box-shadow: 0 0 40px rgba(0,0,0,0.3);
+    }
+    .m-proposal--timer {
+      display: none;
+    }
+    .m-proposal--button,
+    .m-proposal--likes {
+      display: block;
+    }
+  }
+}
