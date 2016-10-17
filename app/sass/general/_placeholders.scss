@@ -75,19 +75,38 @@
   vertical-align: middle;
   -webkit-tap-highlight-color: transparent;
   font-size: 1.8rem;
+  &:hover,
+  &:focus {
+    background-color: lighten($button-primary-color, 20%);
+  }
 }
 %btn-icon {
-  font-size: 1.8rem;
-  line-height: 1em;
+  font-size: 1.5em;
+  line-height: 100%;
   vertical-align: middle;
 }
 %btn-secondary {
   background-color: $button-secondary-color;
+
+  &:hover,
+  &:focus {
+    background-color: lighten($button-secondary-color, 20%);
+  }
+
+
 }
 %btn-third {
   background: $button-third-color;
+  &:hover,
+  &:focus {
+    background-color: lighten($button-third-color, 20%);
+  }
 }
 %btn-fourth {
   color: $bace-color;
   background: $color-white;
+  &:hover,
+  &:focus {
+    background-color: darken($color-white, 20%);
+  }
 }

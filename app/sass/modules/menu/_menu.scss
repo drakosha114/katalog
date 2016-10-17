@@ -9,13 +9,15 @@
 }
 .m-menu__footer-main {
   li:not(:first-child) {
-    margin-left: 2rem;
+    margin-left: 5.2rem;
   }
   a {
     color: $footer-color;
     font-size: 1.8rem;
     line-height: 120%;
   }
+  margin-bottom: 7rem;
+  margin-top: 5.5rem;
 }
 .m-menu__footer--social {
   li:not(:first-child) {

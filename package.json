@@ -1,7 +1,6 @@
 {
   "name": "stocker",
   "version": "1.0.0",
-  "description": "",
   "main": "gulpfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -27,5 +26,6 @@
     "gulp-uglify": "^2.0.0",
     "gulp-uglifycss": "^1.0.6",
     "main-bower-files": "^2.13.1"
-  }
+  },
+  "description": ""
 }

@@ -22,6 +22,8 @@ body {
   &.l-header__secondary--fixedMenu {
     padding-top: 9.5rem;
   }
+  position: relative;
+  z-index: 2;
 }
 /* containers */
 
@@ -82,7 +84,21 @@ body {
 }
 .l-footer--main {
   border-top: 1px solid rgba($footer-color, 0.3);
+  .l-container__small {
+    max-width: 1310px;
+  }
+  padding-top: 1rem;
 }
 .l-footer--copyright {
+
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+  .l-container__small {
+    max-width: 1310px;
+  }
+}
+.l-footer--contact {
+  padding-top: 5rem;
+  padding-bottom: 4.3rem;
 
 }
