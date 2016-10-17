@@ -1,0 +1,106 @@
+.m-howWork {
+  position: relative;
+  z-index: 1;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  margin: 4rem 0;
+}
+.m-howWork--items {
+  width: 100%;
+  max-width: 1040px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+}
+.m-howWork--item {
+  h3 {
+    text-transform: uppercase;
+    font-size: 2.4rem;
+    line-height: 120%;
+    margin-bottom: 2rem;
+    margin-top: 0;
+    text-align: left;
+    font-weight: 600;
+  }
+  .col:first-child {
+    text-align: right;
+    h3 {
+      text-align: right;
+    }
+  }
+  .col:last-child {
+    text-align: left;
+    h3 {
+      text-align: left;
+    }
+  }
+  position: relative;
+}
+@media #{$medium-and-down} {
+  .m-howWork--item.col {
+    text-align: center;
+  }
+}
+.m-howWork--image {
+  display: inline-block;
+  max-width: 100%;
+  height: auto;
+}
+.m-howWork--line {
+  position: absolute;
+  z-index: 1;
+  border-left: 2px  dashed $color-red;
+  left: 50%;
+  margin-left: -1px;
+  top: 0;
+  bottom: 0;
+
+  &:before,
+  &:after {
+    content: '';
+    width: 1.4rem;
+    height: 1.4rem;
+    border-radius: 0.7rem;
+    border: 2px solid $color-red;
+    background: $color-light-brown;
+    left: 0;
+    margin-left: -0.8rem;
+    position: absolute;
+  }
+  &:before {
+    top: 0;
+  }
+  &:after {
+    bottom: 0;
+  }
+}
+.m--howWork--counter {
+  position: absolute;
+  left: 50%;
+  margin-left: -4rem;
+  top: 0;
+  width: 8rem;
+  line-height: 8rem;
+  text-align: center;
+  color: $color-white;
+  font-weight: 600;
+  font-size: 3.1rem;
+  background: $color-red;
+  border-radius: 50%;
+}
+.m-howWork--panel {
+  @include flexbox;
+  @include align-items(center);
+  @include justify-content(center);
+  @include flex-direction(row);
+  margin-bottom: 4rem;
+  position: relative;
+  z-index: 2;
+}
+.m-howWork--panel--link {
+  @extend %panel-rownder-buttons;
+  width: 45%;
+}
+.m-howWork--list {
+  background: #eaedf0;
+}
